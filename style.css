@@ -1,0 +1,579 @@
+﻿/*Szkielet strony*/
+body{
+		font-family:Verdana, Geneva, sans-serif;
+		background-color: white;	
+		background-repeat: no-repeat;
+		z-index: 1;
+		margin:0;
+		padding:0;
+		
+	}
+	#container
+	{
+		min-height: 50 px;
+		position:relative;
+	}
+	div#menubar {
+		min-width: 1152px;
+		background-color: #212121;
+		min-height: 60px;
+		padding: 0;
+		z-index: 1;
+		margin: 0 auto;
+	}
+	div#forma
+	{
+		margin: 0px auto;
+		background-color: white;
+		width: 1152px;
+		min-height: 100%;
+		z-index: 2;
+		overflow: hidden;
+		column-count: 2;
+	}
+	div#log{
+		width: 1152px;
+		min-height: 60px;
+		padding: 0;
+		z-index: 1;
+		margin: -20px auto;
+	}
+	a#home{
+		position: center;
+		background-image: url(obrazki/logo.png);
+		display: block;
+		width: 401px;
+		min-height: 36px;
+		background-repeat: no-repeat;
+		margin-top: 10px;
+	}
+	#bar
+	{
+		margin: 30px auto;
+		position: center;
+		background-image: url(obrazki/bar.png);
+		display: block;
+		width: 1100px;
+		min-height: 33px;
+		background-repeat: no-repeat;
+		overflow: hidden;
+	}
+	#opcje
+	{
+	float: right;
+	margin-top: 10px;
+	margin-right: 50px;
+	}
+	.opcje
+	{
+	float: right;
+	color: #196581;
+	}
+	#bar li
+	{
+		list-style: none;
+		width: 100px;
+		float: left;
+		margin: -10px 50px;
+		padding: 0;
+		display: block;
+	}
+	#bar a
+	{
+		color: white;
+		text-align: center;
+		font-size: large;
+		font-family: Verdana, Geneva, sans-serif;
+		font-weight: bold;
+		font-style: normal;
+		text-decoration: none;	
+	}
+	
+
+/*-----------------------opisy czcionek-------------------------------*/
+/*zwykły tekst*/
+.txt_czerwony_m
+	{
+		color: #bc1b1b;
+		text-align: justify;
+	}
+.txt_niebieski_m
+	{
+	text-align: justify;
+	color: #196581;
+	}
+.txt_niebieski_tabela
+	{
+	text-align: center;
+	color: #196581;
+	}
+.txt_zolty_m
+	{
+	text-align: center;
+	color: #ed910b;
+	}
+	
+a
+	{
+		font-style: normal;
+		text-decoration: none;
+		font-size: large;
+		font-family: Verdana, Geneva, serif;
+	}	
+/*tekst pogrubiony*/
+.txt_czerwony_g
+	{
+		text-align: center;
+		color: #bc1b1b;
+		font-weight: bold;
+	}
+.txt_niebieki_g
+	{
+		color: #196581;
+		text-align: center;
+		font-weight: bold;
+		
+	}
+.txt_zolty_g
+	{
+		font-weight: bold;
+		color: #ed910b;
+	}
+/*naglowki*/
+.naglowek_czerwony
+	{
+		color: #bc1b1b;
+		text-align: left;
+	}
+.naglowek_zolty
+	{
+	text-align: center;
+	color: #ed910b;
+	}
+.naglowek_niebieki
+	{
+	color: #196581;
+	text-align: center;
+	}
+ a{
+		color: #196581;
+		text-decoration: none;
+		font-weight: bold;
+	}
+.lista_czerwona
+	{
+		color: #bc1b1b;
+	}
+#input
+	{
+		
+		color: #196581;
+		text-align: center;
+		font-weight: bold;
+		background-color: white;
+		text-decoration: none;
+		border: none;	
+		font-size: large;
+		font-family: Verdana, Geneva, serif;
+	}
+#usun_komentarz
+	{	
+		color: #196581;
+		font-weight: bold;
+		background-color: white;
+		text-decoration: none;
+		border: none;	
+		font-size: 12px;
+		font-family: Verdana, Geneva, serif;
+	}
+
+/*----------------------------------------Repertuar---------------------------------*/
+#rep{
+border-collapse: collapse;
+text-align:center;
+width: 100%;
+height: 200px; 
+
+}
+#rep tr{
+border-bottom-style: groove;
+border-color: #196581;
+}
+#nadchodzace 
+{
+border-collapse: collapse;
+text-align:center;
+width: 100%;
+height: 100px; 
+
+}
+#nadchodzace tr{
+border-bottom-style: solid;
+border-color: #ed910b;
+}
+/*----------------------------------------Rezerwacje-------------------------------*/
+#rezerwacja table.rezerwacja {
+text-align:center;
+width: 100%;
+height: 200px; 
+
+}
+#rezerwacja tr.rez
+{
+
+}
+#rezerwacja td.rzad
+{
+border-bottom: 1px solid gray;
+min-width: 10px;
+min-height: 10px;
+}
+#rezerwacja td.miejsca
+{
+border-left: 1px solid gray;
+border-bottom: 1px solid gray;
+width: 100px;
+height: 100px;
+}
+.rez_table 
+{
+margin-left: 25%;
+}
+.rez1
+{
+margin-left: 10%;
+}
+.wol
+{
+margin-left: 37%;
+width: 50px;
+height: 50px;
+background-repeat: no-repeat;
+background-image: url(obrazki/wolne.png) 
+}
+.zaj
+{
+margin-left: 30%;
+margin-top: 30%;
+width: 50px;
+height: 50px;
+background-repeat: no-repeat;
+background-image: url(obrazki/zajete.png) 
+}
+/*----------------------------------------Aktualności-------------------------------*/
+	#forma div.lewa
+	{
+		margin: 0;
+		padding: 0;
+		width: 700px;
+		min-height: 150px;			
+		float: left;
+	}
+	#forma div.prawa
+	{			
+		float: right;
+		width: 354px;
+		min-height: 300px;
+		margin-right: 30px;
+		padding: 0;
+		color: #ed910b;
+	}
+	#forma div.col_1
+	{
+		overflow: hidden;
+		margin: 0 auto;
+		padding: 0;
+		width: 530px;
+		min-height: 350px;
+	}
+	#forma div.col_2
+	{
+		overflow: hidden;
+		margin: -20px auto;
+		padding: 0;
+		width: 530px;
+		min-height: 350px;
+	}
+	
+	#forma .plakat1
+	{
+		width: 150px;
+		height: 215px;
+		float: right;
+		padding: 0;
+		display: block;
+	}
+	#forma .plakat2
+	{
+		width: 150px;
+		height: 215px;
+		float: right;
+		padding: 0;
+		display: block;
+	}
+	#forma .opis1
+	{
+		width: 350px;
+		min-height: 250px;
+		float: left;
+		margin: 0;
+		padding: 5px;
+		display: block;
+	}
+	#forma .opis2
+	{
+		width: 350px;
+		min-height: 250px;
+		float: left;
+		margin: 0;
+		padding: 5px;
+		display: block;
+	}	
+	#forma .repertuar_na_dzis
+	{
+		width: 310px;
+		min-height: 360px;
+		display: block;
+		margin-left: 20px;
+		margin-top: -1px;
+		padding: 0;
+	}
+	#forma .prostokat
+	{
+		width: 330px;
+		min-height: 25px;
+		display: block;
+		margin: 0 auto;
+		padding: 0;
+		background-color: #ed910b; 
+	}
+
+/*Zaloguj*/
+	#panel
+	{
+		width: 200px;
+		margin: 50px 41%;
+	}
+	#panel .log_rej
+	{
+		width: 400px;
+		text-align: center;
+		word-spacing: 100px;
+		margin: 50px -50%;
+	}
+	
+	#panel .wpisz_dane
+	{
+		color: #bc1b1b;
+		text-align: center;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: normal;
+		font-family: Verdana, Geneva, serif;
+	}
+	#panel .pole1
+	{
+		margin-left: 25px;
+	}
+	#panel .haslo
+	{
+		margin-top: 30px;
+		color: #ed910b;
+		text-align: center;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: normal;	
+		font-family: Verdana, Geneva, serif;
+	}
+
+/*Dodajfilm*/
+	
+	#panelfilm
+	{
+		
+		margin: 0px 30%;
+	}
+	#panelfilm .wpisz_dane
+	{
+		color: #bc1b1b;
+		
+		text-decoration: none;
+		font-weight: bold;
+		font-size: normal;
+		font-family: Verdana, Geneva, serif;
+	}
+	#panelfilm .pole1
+	{
+		
+		margin-left: 25px;
+		float: right;
+	}
+/*Dodajwydarzenie*/
+	
+	#panelwydarzenie
+	{
+		
+		margin: 0px 25%;
+	}
+	#panelwydarzenie .wpisz_dane
+	{
+		color: #bc1b1b;
+		
+		text-decoration: none;
+		font-weight: bold;
+		font-size: normal;
+		font-family: Verdana, Geneva, serif;
+	}
+	#panelwydarzenie .pole1
+	{
+		
+		margin-left: 25px;
+		float: right;
+	}
+/*zmienranga*/
+	
+	#panelzmianarangi
+	{
+		
+		margin: 100px 33%;
+	}
+	#panelzmianarangi .wpisz_dane
+	{
+		color: #bc1b1b;
+		
+		text-decoration: none;
+		font-weight: bold;
+		font-size: normal;
+		font-family: Verdana, Geneva, serif;
+	}
+	#panelzmianarangi .pole1
+	{
+		
+		margin-left: 25px;
+		float: right;
+	}	
+
+/*O NAS*/
+	#forma .o_nas
+	{
+		color: #bc1b1b;
+		text-align: center;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	#forma .zbiorczy
+	{
+		weight: 100%;
+		display: block;
+		margin-top: 50px;
+	}
+	#forma .mapa
+	{
+		width: 380px;
+		display: block;
+		float: left;
+		margin-top: -20px;
+	}
+	#forma .kontakt
+	{
+		width:370px;
+		display: block;
+		float: left;
+		margin-top: -20px;
+		margin-left: 30px;;
+	}
+	#forma .cennik
+	{
+		width: 370px;
+		display: block;
+		float: right;
+		margin-top: -20px;
+		padding: 0;
+		overflow: hidden;
+	}
+	
+	
+	
+	#forma .galeria
+	{
+		width: 90%;
+		padding: 0;
+		margin: 20px 40px;
+		min-height: 200px;
+		float: left;
+		display: block;
+	}
+	
+/*Filmy*/
+	#filmy
+	{		
+			diplay: block;
+			margin: 100px 40%;
+	}
+	
+	#tabela_filmow
+	{
+		height: 300px;
+		color:  #196581;
+		width: 90%;
+		margin: 0 50px;	
+	}
+/*---------------------------------------Film podstrona z opisem----------------------------------*/
+.plakaty
+	{
+	float: left;
+	width: 150px;
+	height: 215px;
+	margin: 55px auto;
+	margin-left: 200px;
+	padding: 0;
+	display: block;
+	}
+.opis
+	{
+	overflow: auto;
+	width: 500px;
+	margin-left: 80px;
+	/*border: 1px dashed #bc1b1b;*/
+	float: left;
+	padding: 0;
+	display: block;
+	}
+.poj_film_1
+	{	
+	width: 100%;
+	min-height: 330px;
+	margin: 15px auto;
+	}
+.yt
+	{
+	width: 500px;
+	height: 300px;
+	/*border: 1px dashed #bc1b1b;*/	
+	padding: 0;
+	margin-left: 150px;
+	float: left;
+	}
+.dane_filmu
+	{
+	min-width: 200px;
+	min-height: 300px;
+	padding: 0;
+	margin-right: auto;
+	float: right;
+	}	
+.komentarze
+	{
+	width: 100%;
+	min-height: 200px;
+	margin-top: 40px;
+	position: relative;
+	}
+.komentarze_tresc
+	{
+	
+	width: 100%;
+	min-height: 200px;
+	margin-top: 40px;
+	position: relative;
+	}
